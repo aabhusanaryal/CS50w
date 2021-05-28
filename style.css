@@ -2,17 +2,36 @@ body{
     margin: 0;
     padding: 0;
     background: #fff;
+    font-family: arial,helvetica;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
 }
 
 /* Header */
 header{
     margin-top: 20px;
     height: 50px;
-    text-align: right;
     padding-right: 20px;
+    position: relative;
+}
+
+#headerList{
+    position:absolute;
+    right: 20px;
+}
+
+#headerLogo{
+    padding-left: 20px;
 }
 
 header li{
+    text-align: right;
     list-style-type: none;
     display: inline;
     margin: 10px;
@@ -24,7 +43,7 @@ header li{
     padding-top: 7%;
 }
   
-input[type=text]{
+.materialInput{
     width: 40%;
     height: 35px;
     margin: 20px;
@@ -34,11 +53,11 @@ input[type=text]{
     border: 1px solid #cccbcb;
 }
 
-input[type=text]:hover{
+.materialInput:hover{
     box-shadow: 1px 1px #a8a5a5;
 }
 
-input[type=submit]{
+input[type=submit], button{
     width: 150px;
     height: 40px;
     margin: 5px;
@@ -46,9 +65,67 @@ input[type=submit]{
     background-color: #fafafa;
 }
 
-input[type=submit]:hover{
+input[type=submit]:hover, button:hover{
     border: 1px solid #d1cece;
 }
+
+/* Specific to Advance Search page */
+
+h3{
+    color: #d93025;
+}
+.advancedContainer{
+    margin:0 0 0 50px;
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background: #f5f5f5e8;
+    margin-bottom: 45px;
+}
+
+.gridContainer{
+    display: grid;
+    width: 900px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: 200px auto 300px;
+}
+
+.retroInput{
+    height: 20px;
+    width: 500px;
+}
+.retroInput:focus{
+    outline: 1px solid #8bb6fb;
+}
+
+.example{
+    font-size: 12px;
+}
+
+@media(max-width: 800px){
+    .retroInput{
+        width: 80%;
+    }
+    .example{
+        visibility: hidden;
+    }
+}
+
+#advBtnContainer{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#advSearchBtn{
+    align-self: center;
+    justify-self: center;
+    margin-top: 20px;
+    background-color: #6d9cee;
+}
+
 
 /* Footer */
 footer{

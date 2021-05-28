@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Google</title>
+</head>
+<body>
+    <header>
+        <span id="headerLogo">
+            <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" id="logo" alt="Google's Logo">
+        </span>
+        <span id="headerList">
+            <li><a href="./index.html">Google</a></li>
+            <li><a href="./image.html">Image Search</a></li>
+        </span>
+    </header>
+    <div class="advancedContainer">
+        <h3>Advanced Search</h3>
+    </div>
+    <hr>
+    <div class="advancedContainer">
+        <form action="https://google.com/search">
+            <div class="gridContainer">
+                <div class="gridItem"><h4>Find pages with...</h4></div>
+                <div class="gridItem"></div>
+                <div class="gridItem"><h4>To do this in the search box.</h4></div>
+                <div class="gridItem">all these words:</div>
+                <div class="gridItem"><input type="text" class="retroInput" name="as_q"></div>
+                <div class="example">Type the important words: tri-colour rat terrier</div>
+                <div class="gridItem">this exact word or phrase:</div>
+                <div class="gridItem"><input type="text" class="retroInput" name="as_epq"></div>
+                <div class="example">Put exact words in quotes: "rat terrier"</div>
+                <div class="gridItem">any of these words:</div>
+                <div class="gridItem"><input type="text" class="retroInput" name="as_oq"></div>
+                <div class="example">Type OR between all the words you want: miniature OR standard</div>
+                <div class="gridItem">none of these words:</div>
+                <div class="gridItem"><input type="text" class="retroInput" name="as_eq"></div>
+                <div class="example">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</div>
+                <div></div>
+                <div id="advBtnContainer"><button id="advSearchBtn">Advance Search</button></div>
+            </div>
+            
+
+            <!-- as_q=all&as_epq=exact&as_oq=any&as_eq=none -->
+        </form>
+    </div>
+    <footer>
+        Nepal
+    </footer>
+</body>
+</html>
