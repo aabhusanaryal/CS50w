@@ -13,12 +13,14 @@ a:hover{
     text-decoration: underline;
 }
 
+
 /* Header */
 header{
     margin-top: 20px;
     height: 50px;
     padding-right: 20px;
     position: relative;
+    font-size: 14px;
 }
 
 #headerList{
@@ -42,9 +44,9 @@ header li{
     text-align: center;
     padding-top: 7%;
 }
-  
+
 .materialInput{
-    width: 40%;
+    width: 560px;
     height: 35px;
     margin: 20px;
     padding: 5px 0 5px 15px;
@@ -53,6 +55,11 @@ header li{
     border: 1px solid #cccbcb;
 }
 
+@media(max-width: 700px){
+    .materialInput{
+        width: 80%;
+    }
+}
 .materialInput:hover{
     box-shadow: 1px 1px #a8a5a5;
 }
@@ -93,6 +100,7 @@ hr{
     grid-template-columns: 200px auto 300px;
 }
 
+
 .retroInput{
     height: 20px;
     width: 500px;
@@ -107,9 +115,9 @@ hr{
 
 @media(max-width: 800px){
     .retroInput{
-        width: 80%;
+        width: 100%;
     }
-    .example{
+    .hide{
         visibility: hidden;
     }
 }
@@ -122,8 +130,21 @@ hr{
 #advSearchBtn{
     align-self: center;
     justify-self: center;
-    margin-top: 20px;
-    background-color: #6d9cee;
+    margin: 0px;
+    background-color: #4c8efb;
+    color: white;
+    border-radius: 2px;
+    height: 30px;
+    width: auto;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px 10px 25px 10px;
+}
+
+#advSearchBtn:hover{
+    background-color: #317bf3;
+    border: 0;
+    outline: none;
 }
 
 
@@ -135,4 +156,6 @@ footer{
     width: 100%;
     padding: 30px 0 30px 30px;
     background-color: #ececec;
+    font-size: 14px;
+    color: rgb(128, 127, 127);
 }
